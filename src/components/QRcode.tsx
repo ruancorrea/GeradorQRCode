@@ -13,7 +13,7 @@ export default function QRcode () {
     }
 
     function download() {
-        let img = document.getElementById('imageQRCode');
+        let img = document.getElementById('imageQRCode') as HTMLImageElement;
         let path = img.src;
         let arq = "qrcode_" + link + ".png";
         saveAs(path, arq); 
